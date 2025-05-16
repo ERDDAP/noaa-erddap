@@ -1,75 +1,45 @@
 [
   {
-    "url": "https://coastwatch.pfeg.noaa.gov/erddap/"
+    "url":  "https://coastwatch.pfeg.noaa.gov/erddap/"
   },
   {
-    "url": "https://upwell.pfeg.noaa.gov/erddap/"
+    "url":  "https://polarwatch.noaa.gov/erddap/"
   },
   {
-    "url": "https://polarwatch.noaa.gov/erddap/"
-  },
-  {
-    "url": "https://coastwatch.noaa.gov/erddap/"
-  },
-  {
-    "url": "https://oceanwatch.pifsc.noaa.gov/erddap/"
-  },
-  {
-    "url": "https://erddap.sensors.ioos.us/erddap/"
-  },
-  {
-    "url": "https://data.ioos.us/gliders/erddap/"
-  },
-  {
-    "url":  "https://erddap.aoos.org/erddap/"
+    "url":  "https://coastwatch.noaa.gov/erddap/"
   },
   {
     "url":  "https://erddap.cencoos.org/erddap/"
   },
   {
-    "url":  "https://erddap.maracoos.org/erddap/"
+    "url":  "https://erddap.sccoos.org/erddap/"
   },
   {
-    "url":  "https://erddap.nanoos.org/erddap/"
+    "url":  "https://erddap.sensors.ioos.us/erddap/"
   },
   {
-    "url": "https://www.neracoos.org/erddap/"
+    "url":  "https://cwcgom.aoml.noaa.gov/erddap/"
   },
   {
-    "url": "https://data.neracoos.org/erddap/"
+    "url":  "https://oceanwatch.pifsc.noaa.gov/erddap/"
   },
   {
-    "url":  "https://pae-paha.pacioos.hawaii.edu/erddap/"
+    "url":  "https://www.ncei.noaa.gov/erddap/"
   },
   {
-    "url": "https://sccoos.org/erddap/"
+    "url":  "https://osmc.noaa.gov/erddap/"
   },
   {
-    "url": "https://erddap.secoora.org/erddap/"
+    "url":  "https://apps.glerl.noaa.gov/erddap/"
   },
   {
-    "url":  "https://seagull-erddap.glos.org/erddap/"
-  },
-  {
-    "url":  "https://erddap.gcoos.org/erddap/"
-  },
-  {
-    "url": "https://gcoos5.geos.tamu.edu/erddap/"
-  },
-  {
-    "url": "https://gcoos4.tamu.edu/erddap/"
-  },
-  {
-    "url": "https://atn.ioos.us/erddap/"
+    "url":  "https://ferret.pmel.noaa.gov/pmel/erddap/"
   },
   {
     "url":  "https://erddap.aoml.noaa.gov/gdp/erddap/"
   },
   {
-    "url": "https://data.pmel.noaa.gov/pmel/erddap/"
-  },
-  {
-    "url":  "https://ferret.pmel.noaa.gov/pmel/erddap/"
+    "url":  "https://comet.nefsc.noaa.gov/erddap/"
   },
   {
     "url":  "https://ferret.pmel.noaa.gov/alamo/erddap/"
@@ -78,120 +48,45 @@
     "url":  "https://ferret.pmel.noaa.gov/socat/erddap/"
   },
   {
-    "url": "https://osmc.noaa.gov/erddap/"
-  },
-  {
-    "url":  "https://apps.glerl.noaa.gov/erddap/"
-  },
-  {
-    "url": "https://www.ncei.noaa.gov/erddap/"
-  },
-  {
-    "url":  "https://erddap.aoml.noaa.gov/gdp/erddap/"
-  },
-  {
-    "url": "https://cwcgom.aoml.noaa.gov/erddap/"
-  },
-  {
     "url":  "https://pub-data.diver.orr.noaa.gov/erddap/"
   },
   {
-    "url": "https://opendap.co-ops.nos.noaa.gov/erddap/"
+    "url":  "https://gliders.ioos.us/erddap/"
   },
   {
-    "url": "https://erddap.griidc.org/erddap/"
+    "url":  "https://erddap.nanoos.org/erddap/"
   },
   {
-    "url": "https://apdrc.soest.hawaii.edu/erddap/"
+    "url":  "https://www.neracoos.org/erddap/"
   },
   {
-    "url": "https://geoport.usgs.esipfed.org/erddap/"
+    "url":  "https://erddap.maracoos.org/erddap/"
   },
   {
-    "url": "https://erddap.bco-dmo.org/erddap/"
+    "url":  "https://erddap.secoora.org/erddap/"
   },
   {
-    "url": "https://erddap.emodnet-physics.eu/erddap/"
+    "url":  "https://seagull-erddap.glos.org/erddap/"
   },
   {
-    "url": "https://erddap.marine.ie/erddap/"
+    "url":  "https://erddap.gcoos.org/erddap/"
   },
   {
-    "url": "http://dap.onc.uvic.ca/erddap/"
+    "url":  "https://gcoos5.geos.tamu.edu/erddap/"
   },
   {
-    "url": "https://erddap.dataexplorer.oceanobservatories.org/erddap/"
+    "url":  "https://data.neracoos.org/erddap/"
   },
   {
-    "url": "https://erddap-goldcopy.dataexplorer.oceanobservatories.org/erddap/"
+    "url":  "https://apdrc.soest.hawaii.edu/erddap//"
   },
   {
-    "url": "https://members.oceantrack.org/erddap/"
+    "url":  "https://pae-paha.pacioos.hawaii.edu/erddap/"
   },
   {
-    "url": "https://tds.marine.rutgers.edu/erddap/"
+    "url":  "https://oceanview.pfeg.noaa.gov/erddap/"
   },
   {
-    "url": "https://spraydata.ucsd.edu/erddap/"
-  },
-  {
-    "url": "https://basin.ceoe.udel.edu/erddap/"
-  },
-  {
-    "url": "https://www.smartatlantic.ca/erddap/"
-  },
-  {
-    "url": "https://salishsea.eos.ubc.ca/erddap/"
-  },
-  {
-    "url": "https://canwinerddap.ad.umanitoba.ca/erddap/"
-  },
-  {
-    "url": "https://cioosatlantic.ca/erddap/"
-  },
-  {
-    "url": "https://data.permafrostnet.ca/erddap/"
-  },
-  {
-    "url": "https://erddap.ogsl.ca/erddap/"
-  },
-  {
-    "url": "https://catalogue.hakai.org/erddap/"
-  },
-  {
-    "url": "http://bmlsc.ucdavis.edu:8080/erddap/"
-  },
-  {
-    "url": "https://erddap.bio-oracle.org/erddap/"
-  },
-  {
-    "url": "https://erddap.emso-fr.org/erddap/"
-  },
-  {
-    "url": "https://erddap.ifremer.fr/erddap/"
-  },
-  {
-    "url": "https://erddap.emodnet.eu/erddap/"
-  },
-  {
-    "url": "https://erddap.emodnet-physics.eu/erddap/"
-  },
-  {
-    "url": "https://erddap.emso.eu/erddap/"
-  },
-  {
-    "url": "https://data.iadc.cnr.it/erddap/"
-  },
-  {
-    "url": "https://nodc.ogs.it//erddap/"
-  },
-  {
-    "url": "https://erddap.observations.voiceoftheocean.org/erddap/"
-  },
-  {
-    "url": "https://linkedsystems.uk/erddap/"
-  },
-  {
-    "url": "https://erddap.incois.gov.in/erddap/"
+    "url":  "https://erddap.aoos.org/erddap/"
   }
 ]
