@@ -36,7 +36,6 @@
 		}
 		</script>
 		<!-- end polyfills -->
-		<script src="https://irishmarineinstitute.github.io/awesome-erddap/erddaps.js"></script>
 		<script src="fetch-jsonp.js"></script>
 	</head>
 
@@ -77,7 +76,7 @@
 				  <div class="form-group">
 				    <label for="newServerName">Name</label>
 				      <input type="text" class="form-control" id="newServerName" placeholder="My ERRDAP Server">
-				      <small id="share" class="form-text text-muted">To share your server with others, submit to <a target="_blank" title="opens a new window" href="https://github.com/irishmarineinstitute/awesome-erddap/">awesome erddap</a></small>
+				      <small id="share" class="form-text text-muted">To share your server with others, submit to <a target="_blank" title="opens a new window" href="https://github.com/erddap/noaa-erddap/">noaa-erddap</a></small>
 				  </div>
 				  <div class="form-group">
 				    <label for="newServerUrl">Url</label>
@@ -148,16 +147,11 @@
 				onHashChanged();
 			});
 		};
-	if(typeof(awesomeErddaps) !== 'undefined'){
-		runApp(awesomeErddaps);
-	}else{
-		console.log("The awesomeErddaps list was not loaded.... will try fetch possibly out-of-date backup copy");
 		fetch("./erddaps.json").then(function(response){
 			return response.json();
 		}).then(runApp).catch(function(x){
 			console.log("problem loading erddaps.json",x);
 		});
-	}
 		</script>
 		 <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
 		   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
