@@ -76,7 +76,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">NOAA-ERDDAPs</a>
+      <a class="navbar-brand" href="#">DISCOVER NOAA ERDDAPS</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -95,7 +95,7 @@
 <header class="hero">
   <div class="overlay"></div>
   <div class="container">
-    <h1 class="display-4">NOAA Dataset Discovery</h1>
+    <h1 class="display-4">Discover NOAA Dataset</h1>
     <p class="lead">Explore and access geospatial, environmental, and oceanographic datasets available through NOAA ERDDAP data servers
 </p>
 
@@ -114,15 +114,16 @@
                         <div id="searchForm" class="form-group" style="display: none">
 
                             <input type="text" class="form-control" id="search" aria-describedby="searchHelp" placeholder="Enter some text...">
-                            <small id="searchHelp" class="form-text text-muted">Type some words about the dataset you seek, then click Search button</small>
+                            <small id="searchHelp" class="form-text text-muted">Enter keywords or a description of the dataset you are looking for, then click the Search button</small>
                             <button id="searchDatasetsButton" class="btn btn-primary">Search</button>
                             <button id="clearButton" onclick="clearSearchDatasets()" class="btn btn-outline-success">Clear</button>
                         </div>
-					  <div class="row" id="searchInfo"></div>
-					  <div class="row" id="searchResults"></div>
 
-	            </div>
-	    	</div>
+            <div class="row" id="searchInfo"></div>
+					  <div id="searchResults"></div>
+
+						</div>
+				</div>
 	    	<div class="row" id="configurationArea" style="display: none">
 	            	<legend><a target="_blank" href="https://coastwatch.pfeg.noaa.gov/erddap/information.html" title="find out more...">ERDDAP</a> Server Settings <a href="#" onclick="showSearch()" title="Click to hide settings" class="float-right"><i class="fa fa-window-close"></i></span></a></legend>
 	            	<div id="configureErddapServer" class="form-group">
@@ -160,64 +161,7 @@
 	
 		<script src="app.js"></script>
 
-<script>
-	var getUrlSearchParams = function(){
-		if(location.hash.indexOf('?')>0){
-			return new URLSearchParams(location.hash.substring(location.hash.indexOf('?')));
-		}
-		return new URLSearchParams(location.hash?location.hash.substring(1):"");
-	}
-	var getSearchValue = function(){
-		return document.getElementById('search').value;
-	}
-	var runApp = function(erddap_list){
-			var erddaps = new ERDDAPs(erddap_list,true);//true = use custom erddaps saved to local storage.
-			var onHashChanged = function(){
-				var urlParams = getUrlSearchParams();
-				var search = urlParams.get('search');
-				if(search && search != getSearchValue()){
-					document.getElementById('search').value = search;
-					erddaps.search(search);
-				}
-			}
-			document.getElementById('search').onkeydown = function(e){
-				var evt = e || window.event;
-				if ( evt.keyCode === 13 ) {
-					erddaps.search(getSearchValue());
-				}
-			};
-			document.getElementById('filter').onkeydown = function(e){
-				var evt = e || window.event;
-				if ( evt.keyCode === 13 ) {
-					filterServers();
-				}
-			};
-			document.getElementById('searchDatasetsButton').onclick = function(){
-				erddaps.search(getSearchValue());
-			}
-			document.getElementById('addNewServerButtion').onclick = function(){
-				erddaps.addNewServerFromForm();
-			}
 
-			document.getElementById('search').focus();
-			erddaps.testConnect().then(function(){
-				document.getElementById("testConnections").style.display='none';
-				document.getElementById("searchForm").style.display='block';
-				document.getElementById("erddapServers").innerHTML= "";
-				document.getElementById("erddapServers").appendChild(erddaps.settingstable());
-				window.addEventListener("hashchange", onHashChanged, false);
-				onHashChanged();
-			});
-		};
-		fetch("./erddaps.json").then(function(response){
-			return response.json();
-		}).then(runApp).catch(function(x){
-			console.log("problem loading erddaps.json",x);
-		});
-		</script>
-		 <!-- <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-		   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-		   crossorigin=""></script> -->
 
 </section>
 
@@ -247,11 +191,6 @@
       IOOS Code Gallery
     </a> – A collection of tutorials in R and Python focused on oceanographic data access and analysis.
   </li>
-  <li>
-    <a href="https://noaa-cefi-portal.github.io/cefi-cookbook/content/cefi_goal.html">
-      CEFI Portal and Cookbook
-    </a> – Resources for accessing CEFI data and examples for working with data from various NOAA and partner data servers.
-  </li>
 </ul>
     </div>
   </section>
@@ -260,10 +199,9 @@
   <section id="credit" class="section bg-light">
     <div class="container">
       <h2 class="text-center mb-4">Project Attribution</h2>
-      <p >This page is a modified version of the original project and 
+      <p >This page is a modified version of the original ERDDAP search project (https://erddap.com) and 
         is maintained by the ERDDAP data user community in collaboration with NOAA CoastWatch and the Southwest Fisheries Science Center (SWFSC). 
-        The initial development was supported by the Government of Ireland and the European Maritime 
-        and Fisheries Fund (EMFF) as part of the EMFF Operational Programme 2014–2020.
+        The initial development was supported by the Government of Ireland and the European Maritime and Fisheries Fund (EMFF) yas part of the EMFF Operational Programme 2014–2020.
       </p>
     </div>
   </section>
@@ -331,10 +269,14 @@
 		}).then(runApp).catch(function(x){
 			console.log("problem loading erddaps.json",x);
 		});
+		
+ 
 		</script>
 
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
 </body>
 </html>
