@@ -29,7 +29,7 @@
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: rgba(0, 0, 0, 0.4); /* adjust transparency here */
+  background: rgba(0, 0, 0, 0.4); /* color and transparency (rgba) */
   z-index: 0;
 }
 
@@ -55,7 +55,7 @@
       padding: 20px 0;
     }
   </style>
-		<!-- start poloyfils for explorer -->
+	
 		<script>
         window.Promise || document.write('<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.min.js"><\/script>');
         window.fetch || document.write('<script src="https://unpkg.com/unfetch/polyfill"><\/script>');
@@ -91,7 +91,7 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- Hero Section (with background image) -->
 <header class="hero">
   <div class="overlay"></div>
   <div class="container">
@@ -99,12 +99,13 @@
     <p class="lead">Explore and access geospatial, environmental, and oceanographic datasets available through NOAA ERDDAP data servers
 </p>
 
+
   </div>
 </header>
 
 
 
-  <!-- Data Section -->
+  <!-- Data search Section -->
   <section id="Search" class="section">
 	    <div class="container">
             <h2>Search Datasets</h2>
@@ -165,14 +166,22 @@
 
 </section>
 
-  <!-- About Section -->
+  <!-- About erddap Section -->
 
   <section id="about" class="section bg-light">
     <div class="container">
       <h2 class="text-center mb-4">ERDDAP Data Servers</h2>
-      <p class="text-center">ERDDAP is a data server that gives you a simple, 
+      <p >ERDDAP is a data server that gives you a simple, 
         consistent way to download subsets of scientific datasets 
         in common file formats and make graphs and maps.</p>
+
+        <p>
+          A NOAA-wide ERDDAP server, which federates the ERDDAP servers 
+          listed on this page as well as several NOAA THREDDS servers, 
+          is available at <a href="https://oceanwatch.pfeg.noaa.gov/noaa_wide/erddap/" target="_blank">https://oceanwatch.pfeg.noaa.gov/noaa_wide/erddap/</a>.
+
+
+</p>
     </div>
   </section>
 
@@ -211,7 +220,7 @@
     <div class="container">
       <p><a href="https://creativecommons.org/licenses/by/2.0/" class="text-info" target="_blank" rel="noopener noreferrer">
         CC BY 2.0
-      </a>.</p>
+      </a></p>
     </div>
   </footer>
 
