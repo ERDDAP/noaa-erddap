@@ -1,11 +1,5 @@
 [
   {
-		"name": "NOAA-wide ERDDAP",
-		"short_name": "NOAA-wide",
-		"url": "https://oceanwatch.pfeg.noaa.gov/noaa_wide/erddap/",
-		"public": true
-  },
-  {
 		"name": "ERD/CoastWatch West Coast Node",
 		"short_name": "CSWC",
 		"url": "https://coastwatch.pfeg.noaa.gov/erddap/",
